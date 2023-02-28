@@ -17,4 +17,6 @@ public interface ApplyRepository {
 
     public int deleteById(int id);
 
+    public Apply findByUserIdAndBoardId(Apply apply);
+
 }

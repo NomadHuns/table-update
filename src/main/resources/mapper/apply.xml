@@ -29,4 +29,7 @@
         delete from apply_tb where id = #{id}
     </delete>
 
+    <select id="findByUserIdAndBoardId" resultType="shop.mtcoding.examtest.apply.model.Apply">
+        select * from apply_tb where user_id = #{userId} and board_id = #{boardId}
+    </select>
 </mapper>

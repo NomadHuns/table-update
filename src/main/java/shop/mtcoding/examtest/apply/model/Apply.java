@@ -12,4 +12,9 @@ public class Apply {
     private Integer userId;
     private Integer boardId;
     private Timestamp createdAt;
+
+    public Apply(Integer userId, Integer boardId) {
+        this.userId = userId;
+        this.boardId = boardId;
+    }
 }
